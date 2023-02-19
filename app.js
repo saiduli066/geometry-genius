@@ -69,11 +69,13 @@ document.getElementById('rectangle-area').addEventListener('click', function () 
 
 
 // parallelogram
+
 document.getElementById('parallelogram-area').addEventListener('click', function () {
   const bLength = getTextElementValueById('b-width');
   const hLength = getTextElementValueById('h-height');
 
   const parallelogramArea = (bLength * hLength);
+  document.getElementById('parallelogram-area-field').innerText = ''; // clear the field
   document.getElementById('parallelogram-area-field').innerText += parallelogramArea;
 })
 
@@ -84,6 +86,7 @@ document.getElementById('rhombus-area').addEventListener('click', function () {
   const d2 = getTextElementValueById('d2-length');
 
   const rhombusArea = (0.5 * d1 * d2).toFixed(2);
+  document.getElementById('rhombus-area-field').innerText = ''; // clear the field
   document.getElementById('rhombus-area-field').innerText += rhombusArea;
 })
 
@@ -94,6 +97,7 @@ document.getElementById('pentagon-area').addEventListener('click', function () {
   const b = getTextElementValueById('pb-length');
 
   const pentagonArea = (0.5 * p * b).toFixed(2);
+  document.getElementById('pentagon-area-field').innerText = ''; 
   document.getElementById('pentagon-area-field').innerText += pentagonArea;
 })
 
@@ -104,6 +108,7 @@ document.getElementById('ellipse-area').addEventListener('click', function () {
   const b = getTextElementValueById('b');
 
   const ellipseArea = (pie * a * b).toFixed(2);
+  document.getElementById('ellipse-area-field').innerText = ''; 
   document.getElementById('ellipse-area-field').innerText += ellipseArea;
 })
 

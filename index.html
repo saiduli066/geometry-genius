@@ -48,7 +48,7 @@
                        <h4>cm</h4>
                          </div>
                     </div>
-                    <div><button id="triangle-area"  class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
+                    <div class="mx-auto"><button id="triangle-area"  class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
               </div>
   <!-- .................... -->
               <div class="card  w-3/4 flex flex-col overflow-hidden gap-3 p-10  bg-indigo-100 rounded">
@@ -67,7 +67,7 @@
                        <h4>cm</h4>
                          </div>
                     </div>
-                    <div><button id="rectangle-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
+                    <div class="mx-auto"><button id="rectangle-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
               </div>
               <!--.............  -->
   
@@ -75,10 +75,10 @@
   
                   <img class="w-3/4 mx-auto mb-2" src="./images/parallelogram.png" alt="">
                   <h1 class="font-semibold text-lg lg:text-2xl xxl:text-2xl xl:text-2xl text-center text-gray-700">Parallelogram</h1>
-                   <h4 class=" mx-auto text-gray-600 ">Area (A) = b x h</h4>
+                   <h4 class=" mx-auto text-gray-600 ">Area(A)= b x h</h4>
                    <h3 class="mx-auto text-gray-600">b=<span id="b-width">10</span>cm, h=<span id="h-height">12</span>cm</h3>
                    
-                   <div><button id="parallelogram-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
+                   <div class="mx-auto"><button id="parallelogram-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
               </div>
              <!-- ................. -->
               <div class="card w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
@@ -88,7 +88,7 @@
                    <h4 class="mx-auto text-gray-600">Area(A)=0.5 xd<sub>1</sub>xd<sub>2</sub></h4>
                    <h3 class="mx-auto text-gray-600">d<sub>1</sub>=<span id="d1-length">16</span>cm, d<sub>2</sub>=<span id="d2-length">8</span>cm</h3>
                     
-                   <div><button id="rhombus-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
+                   <div class="mx-auto"><button id="rhombus-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
               </div>
            <!-- ................. -->
               <div class="card w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
@@ -98,7 +98,7 @@
                    <h4 class="mx-auto text-gray-600">Area(A)= 0.5xpxb</h4>
                    <h3 class=" mx-auto text-gray-600">p = <span id="p-length">6</span>cm, b = <span id="pb-length">10</span>cm</h3>
                     
-                   <div><button id="pentagon-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
+                   <div class="mx-auto"><button id="pentagon-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
               </div>
    <!-- ................. -->
               <div class="card w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
@@ -109,7 +109,7 @@
                    <h3 class=" mx-auto text-gray-600">a = <span id="a">10</span>cm, b = <span id="b">4</span>cm
                    </h3>
                     
-                   <div><button id="ellipse-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
+                   <div class="mx-auto"><button id="ellipse-area" class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center">Calculate</button></div>
               </div>
               
            
@@ -122,41 +122,21 @@
               <div id="container">
                  <h3 id="triangle-area-container" class="m-2 ">Triangle area=<span id="triangle-area-field"></span> cm<sup>2</sup><button id="convert-btn" class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
                  
-                 <h3 class="m-2 ">Rectangle area=<span id="rectangle-area-field"></span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
+                 <h3 class="m-2 ">RectangleArea=<span id="rectangle-area-field"></span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
 
-                 <h3 class="m-2 ">Parallelogram area=<span id="parallelogram-area-field"></span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button> 
+                 <h3 class="m-2">ParallelogramArea=<span id="parallelogram-area-field"></span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button> 
                 </h3>
 
-                 <h3 class="m-2 ">Rhombus area=<span id="rhombus-area-field"> </span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
+                 <h3 class="m-2 ">RhombusArea=<span id="rhombus-area-field"> </span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
 
-                 <h3 class="m-2 ">Pentagon area=<span id="pentagon-area-field"></span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
+                 <h3 class="m-2 ">PentagonArea=<span id="pentagon-area-field"></span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
 
-                 <h3 class="m-2 ">Ellipse area=<span id="ellipse-area-field"></span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
+                 <h3 class="m-2 ">EllipseArea=<span id="ellipse-area-field"></span> cm<sup>2</sup> <button class="w-1/3 text-sm bg-amber-500 hover:bg-amber-600 py-1 rounded-lg font-medium text-white">convert m<sup>2</sup></button></h3>
 
 
 
               </div>
 
-
-
-               <!-- <div class="overflow-x-auto">
-                <table class="table table-zebra w-full">
-                 
-                  <thead>
-                    <tr>
-                      <th>No.</th>
-                      <th>Area</th>
-                      <th><button id="convert-btn" class="text-sm bg-amber-500 hover:bg-amber-600 py-1 px-2 rounded-lg font-medium text-white">convert m<sup>2</sup></button></th>
-                      
-                    </tr>
-                  </thead>
-                <tbody id="table-container">
-
-                </tbody>
-                      
-                  
-                </table>
-            </div>  -->
         
           </div> 
         
