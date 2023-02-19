@@ -1,8 +1,24 @@
 //Common function...
+
+
 function getInputFieldValueById(inputId) {
   const inputField = document.getElementById(inputId);
   const inputFieldValueString = inputField.value;
+  
+  //  if input is blank
+  if (inputFieldValueString === '') {
+    alert('You cannot leave it blank');
+    return null;
+  }
+  
   const inputFieldValue = parseFloat(inputFieldValueString);
+  
+  // if input is not a number
+  if (isNaN(inputFieldValue)) {
+    alert('The value for must be a number.');
+    return null;
+  }
+  
   inputField.value = '';
   return inputFieldValue;
 }
@@ -21,14 +37,6 @@ function getTextElementValueById(elementId) {
   
 }
 
-// function calculateWithoutFieldValue(areaId) {
-//   document.getElementById(areaId).addEventListener('click', function () {
-//     const elementId='';
-//     const length = getTextElementValueById(elementId);
-
-    
-//    })
-// }
 
 
 // for triangle
@@ -41,6 +49,7 @@ document.getElementById('triangle-area').addEventListener('click', function () {
   setTextElementValueById('h-place', hLength);
   const triangleArea = (0.5 * bLength * hLength).toFixed(2);
   document.getElementById('triangle-area-field').innerText += triangleArea;
+
 })
 
 // for rectangle
@@ -53,7 +62,9 @@ document.getElementById('rectangle-area').addEventListener('click', function () 
   setTextElementValueById('l-place', lLength);
   const rectangleArea = (wLength * lLength);
   document.getElementById('rectangle-area-field').innerText += rectangleArea;
-})
+
+ 
+});
 
 
 
@@ -95,3 +106,26 @@ document.getElementById('ellipse-area').addEventListener('click', function () {
   const ellipseArea = (pie * a * b).toFixed(2);
   document.getElementById('ellipse-area-field').innerText += ellipseArea;
 })
+
+
+
+// random bg color
+
+let cards = document.querySelectorAll('.card');
+for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener('mouseover', function() {
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    this.style.backgroundColor = "#" + randomColor;
+  });
+  
+  cards[i].addEventListener('mouseout', function() {
+    this.style.backgroundColor = '';
+  });
+}
+
+
+// blog page
+
+document.getElementById('goto-blog-page').addEventListener('click', function () {
+  window.location.href = 'https://eclectic-syrniki-3ffc03.netlify.app';
+  })
