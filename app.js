@@ -86,3 +86,12 @@ document.getElementById('pentagon-area').addEventListener('click', function () {
   document.getElementById('pentagon-area-field').innerText += pentagonArea;
 })
 
+//ellipse
+document.getElementById('ellipse-area').addEventListener('click', function () {
+  const pie = 3.14;
+  const a = getTextElementValueById('a');
+  const b = getTextElementValueById('b');
+
+  const ellipseArea = (pie * a * b).toFixed(2);
+  document.getElementById('ellipse-area-field').innerText += ellipseArea;
+})
