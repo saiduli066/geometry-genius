@@ -13,6 +13,22 @@ function setTextElementValueById(elementId,Value) {
 }
 
 //
+function getTextElementValueById(elementId) {
+  const element = document.getElementById(elementId);
+  const elementValueString = element.innerText;
+  const value = parseFloat(elementValueString);
+  return value;
+  
+}
+
+// function calculateWithoutFieldValue(areaId) {
+//   document.getElementById(areaId).addEventListener('click', function () {
+//     const elementId='';
+//     const length = getTextElementValueById(elementId);
+
+    
+//    })
+// }
 
 
 // for triangle
@@ -35,6 +51,19 @@ document.getElementById('rectangle-area').addEventListener('click', function () 
 
   const lLength = getInputFieldValueById('l-length');
   setTextElementValueById('l-place', lLength);
-  const triangleArea = (0.5 * wLength * lLength).toFixed(2);
-  document.getElementById('rectangle-area-field').innerText += triangleArea;
+  const rectangleArea = (wLength * lLength);
+  document.getElementById('rectangle-area-field').innerText += rectangleArea;
 })
+
+
+
+// parallelogram
+document.getElementById('parallelogram-area').addEventListener('click', function () {
+  const bLength = getTextElementValueById('b-width');
+  const hLength = getTextElementValueById('h-height');
+
+  const parallelogramArea = (bLength * hLength);
+  document.getElementById('parallelogram-area-field').innerText += parallelogramArea;
+})
+
+
