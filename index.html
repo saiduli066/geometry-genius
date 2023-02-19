@@ -22,7 +22,108 @@
           onclick="window.location.href='127.0.0.1:5500/blog/blog.html';">Blog</button>
         </div>
      </header>
+   
 
+     <!-- cards -->
+   
+    <main>
+      <section class=" mt-8">
+        <div class="flex sm:flex-col md:flex-col lg:flex-row xl:flex-row xxl:flex-row p-8 ">
+            <!--  -->
+            <div class="grid grid-cols-1 w-9/12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  gap-3 place-items-center">
+
+              <div class="w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
+  
+                  <img class="w-7/12 mx-auto" src="./images/triangle.png" alt="">
+                  <h1 class="font-semibold text-3xl text-center text-gray-700">Triangle</h1>
+                   <h4 class=" mx-auto text-gray-600">Area (A) =0.5 x b x h</h4>
+                   
+                    <div class="flex flex-row gap-2 mx-auto">
+                      <div class="flex gap-1">
+                        <input class="bg-white-100 w-16 px-2 p-1 text-gray-700 rounded-lg" type="text" placeholder="b"> 
+                       <h4>cm</h4>
+                       </div>
+                         <div class="flex gap-1">
+                          <input class="bg-white-100 w-16 px-2 p-1 text-gray-700 rounded-lg" type="text" placeholder="h"> 
+                       <h4>cm</h4>
+                         </div>
+                    </div>
+                    <div class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center"><button>Calculate</button></div>
+              </div>
+  <!-- .................... -->
+              <div class="w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
+  
+                  <img class="w-3/4 mx-auto" src="./images/rectangle.png" alt="">
+                  <h1 class="font-semibold text-3xl text-center text-gray-700">Rectangle</h1>
+                   <h4 class="mx-auto text-gray-600">Area (A) =w x l</h4>
+                   
+                    <div class="flex flex-row gap-2 mx-auto">
+                      <div class="flex gap-1">
+                        <input class="bg-white-100  w-16 px-2 p-1 text-gray-700 rounded-lg" type="text" placeholder="w"> 
+                       <h4>cm</h4>
+                       </div>
+                         <div class="flex gap-1">
+                          <input class="bg-white-100 w-16 px-2 p-1 text-gray-700 rounded-lg" type="text" placeholder="l"> 
+                       <h4>cm</h4>
+                         </div>
+                    </div>
+                    <div class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center"><button>Calculate</button></div>
+              </div>
+              <!--.............  -->
+  
+              <div class="w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
+  
+                  <img class="w-3/4 mx-auto mb-2" src="./images/parallelogram.png" alt="">
+                  <h1 class="font-semibold text-3xl text-center text-gray-700">Parallelogram</h1>
+                   <h4 class=" mx-auto text-gray-600">Area (A) = b x h</h4>
+                   <h3 class="mx-auto text-gray-600">b=10cm, h=12cm</h3>
+                   
+                   <div class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center "><button>Calculate</button></div>
+              </div>
+             <!-- ................. -->
+              <div class="w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
+  
+                  <img class="w-3/4 mx-auto" src="./images/rhombus.png" alt="">
+                  <h1 class="font-semibold text-3xl text-center text-gray-700">Rhombus</h1>
+                   <h4 class="mx-auto text-gray-600">Area (A) =0.5 x d <sub>1</sub> x d <sub>2</sub></h4>
+                   <h3 class="mx-auto text-gray-600">d<sub>1</sub>=16cm, d<sub>2</sub>=8cm</h3>
+                    
+                   <div class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center"><button>Calculate</button>
+                  </div>
+              </div>
+           <!-- ................. -->
+              <div class="w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
+  
+                  <img class="w-7/12 mx-auto" src="./images/pentagon.png" alt="">
+                  <h1 class="font-semibold text-3xl text-center text-gray-700">Pentagon</h1>
+                   <h4 class="mx-auto text-gray-600">Area (A) =0.5 x p x b </h4>
+                   <h3 class=" mx-auto text-gray-600">p = 6cm, b = 10cm</h3>
+                    
+                   <div class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center"><button>Calculate</button></div>
+              </div>
+   <!-- ................. -->
+              <div class="w-3/4 flex flex-col gap-3 p-10  bg-indigo-100 rounded">
+  
+                  <img class="w-3/4 mx-auto" src="./images/ellipse.png" alt="">
+                  <h1 class="font-semibold text-3xl text-center text-gray-700">Ellipse</h1>
+                   <h4 class="mx-auto text-gray-600">Area (A) =&prod;ab</h4>
+                   <h3 class=" mx-auto text-gray-600">a = 10cm, b = 4cm
+                   </h3>
+                    
+                   <div class="bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-medium px-8 py-2 text-center"><button>Calculate</button></div>
+              </div>
+              
+           
+           </div>
+
+           <!--  -->
+           <div class="border-2 w-1/4 p-4">
+              <h2 class="font-semibold text-gray-700 text-center text-3xl"><u>Area Calculation</u></h2>
+           </div>
+        </div> 
+        
+      </section>
+    </main>
 
   <!-- Js -->
   <script src="./app.js"></script>
