@@ -67,3 +67,11 @@ document.getElementById('parallelogram-area').addEventListener('click', function
 })
 
 
+//rhombus
+document.getElementById('rhombus-area').addEventListener('click', function () {
+  const d1 = getTextElementValueById('d1-length');
+  const d2 = getTextElementValueById('d2-length');
+
+  const rhombusArea = (0.5 * d1 * d2).toFixed(2);
+  document.getElementById('rhombus-area-field').innerText += rhombusArea;
+})
