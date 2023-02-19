@@ -75,3 +75,14 @@ document.getElementById('rhombus-area').addEventListener('click', function () {
   const rhombusArea = (0.5 * d1 * d2).toFixed(2);
   document.getElementById('rhombus-area-field').innerText += rhombusArea;
 })
+
+
+//pentagon
+document.getElementById('pentagon-area').addEventListener('click', function () {
+  const p = getTextElementValueById('p-length');
+  const b = getTextElementValueById('pb-length');
+
+  const pentagonArea = (0.5 * p * b).toFixed(2);
+  document.getElementById('pentagon-area-field').innerText += pentagonArea;
+})
+
